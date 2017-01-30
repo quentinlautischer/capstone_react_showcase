@@ -12,8 +12,19 @@ npm install
 
 ## Setup Mobile App
 
-*_Important that your system has xcode for ios and android studio for android_*
+## Mac - iOS Pre-Reqs
+```bash
+Have Xcode up to date.
+```
 
+## Android Pre-Reqs
+  * Android Studio
+      * AVD Lets make an Nexus 5 using Marshmallow (6.0)
+      * Build Tools 23.0.1
+  * Setup Environment Variables __ANDROID_HOME__ && __JAVA_HOME__
+      * [React Native Windows Guide (For more details)](https://facebook.github.io/react-native/docs/getting-started.html#content)
+
+## Mac - iOS & Android
 ```bash
 cd mobile_app_react_native
 
@@ -23,7 +34,31 @@ npm install -g react-native-cli
 
 npm install
 
+react-native run-ios
+react-native run-android
 ```
+
+## For windows - Android
+
+
+```bash
+// Install Chocolatey (Windows Package Manager)
+// Launch a powershell with admin priveledge
+iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
+
+choco install nodejs.install
+choco install python2
+
+npm install -g react-native-cli
+
+cd mobile_app_react_native
+
+// Boot up your Android Emulated Device
+
+react-native run-android
+
+```
+
 
 
 
